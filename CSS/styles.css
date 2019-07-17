@@ -27,7 +27,8 @@ h1 {
 
 .signup_invite h2 {
   color: #2d323b;
-  margin-bottom: 0;
+  margin: 0;
+  padding-top: 15px;
   text-align: center;
 }
 
@@ -38,9 +39,11 @@ h1 {
 
 .signup_heading {
   margin: 0 auto;
-  width: 95%;
+  width: 100%;
   margin-bottom: 1px;
   border-bottom: solid black 3px;
+  background: #b0c4de;
+  padding: 5px;
 }
 
 /* form styles */
@@ -79,6 +82,8 @@ legend {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
   }
 
 .contact_info input,
@@ -94,6 +99,22 @@ select {
 input[type="text"]::placeholder {
   text-align: right;
 }
+
+input[type="text"]:active,
+input[type="email"]:active,
+input[type="tel"]:active {
+  background: #b0c4de;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  background: #ffe6ea;
+
+}
+
+
+
   .topics {
     display: block;
     padding-top: 15px;
@@ -109,7 +130,6 @@ input[type="text"]::placeholder {
     height: 100px;
     border-radius: 5px;
     border: none;
-    box-shadow: 1px 1px;
     max-width: 100%;
   }
 
@@ -141,6 +161,7 @@ input[type="text"]::placeholder {
   }
 .contact_info {
     flex-direction:  row;
+    justify-content: space-around;
   }
 
   .contact_info > label {
