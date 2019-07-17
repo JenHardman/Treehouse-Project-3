@@ -60,7 +60,7 @@ legend {
   color: #2d323b;
   font-weight: bold;
   font-size: 16px;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .labels {
@@ -74,8 +74,12 @@ legend {
   border: solid blue 2px;
 }
 
-
-
+.contact_info {
+  border-bottom: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  }
 
 .contact_info input,
 select {
@@ -105,7 +109,7 @@ input[type="text"]::placeholder {
     height: 100px;
     border-radius: 5px;
     border: none;
-    box-shadow: 1px 1px .3;
+    box-shadow: 1px 1px;
     max-width: 100%;
   }
 
@@ -132,25 +136,22 @@ input[type="text"]::placeholder {
   .form,
   .signup_heading {
     width: 60%;
-    margin: 0 auto;
-    max-width: 1050px;
+    max-width: 70%;
 
   }
-
 .contact_info {
-  display: flex;
-  flex-direction: column;
+    flex-direction:  row;
+  }
 
+  .contact_info > label {
+  flex-basis: 25%;
+  margin: auto 0;
 }
 
-.labels {
-  justify-content: flex-end;
+.contact_info > input,
+.contact_info > select {
+  flex-basis: 75%;
 }
-
-
-
-
-
 
 
   }
