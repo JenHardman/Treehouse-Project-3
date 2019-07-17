@@ -5,32 +5,83 @@ box-sizing: border-box;
 body {
   color: gray;
   font-family: 'Roboto Slab', serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   display: flex;
-  background: #404040;
+  background: #2d323b;
   color: white;
   height: 60px;
-  padding: 5px;
+  width: 100%;
+  justify-content: center;
+
+}
+h1 {
+    align-self: center;
+    font-size: 16px;
 }
 
-.title {
-  align-self: center;
+
+
+.signup_invite h2 {
+  color: #2d323b;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.signup p {
+ text-align: center;
+ display: block;
+}
+
+.signup_heading {
   margin: 0 auto;
-
+  width: 90%;
+  margin-bottom: 1px;
+  border-bottom: solid black 3px;
 }
 
-p {
-  font-size: .8em;
+/* form styles */
+.form {
+  width: 90%;
+  margin: 0 auto;
+  border-top: solid black 1.5px;
+  border-bottom: solid black 2px;
+  padding-top: 10px;
+  margin-top: 3px;
 }
 
-h2 {
-   font-weight: bold;
-   color: #000;
-   font-size: .9em
+fieldset {
+  border: none;
 }
 
-.signup_invite {
-text-align: center;
+legend {
+  color: #2d323b;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
 }
+
+.labels {
+  display: block;
+  padding: 6px;
+  padding-left: 0;
+}
+
+
+
+
+.contact_info input,
+select {
+  width: 100%;
+  background-color: #dcdcdc;
+  padding: 15px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+input[type="text"]::placeholder {
+  text-align: right;
