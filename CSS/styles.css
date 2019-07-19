@@ -80,6 +80,8 @@ legend {
   flex-wrap: wrap;
   margin: 0 auto;
   width: 100%;
+
+
 }
 
 .contact_info input,
@@ -94,8 +96,7 @@ select {
 }
 
 .zip1 {
- flex-basis: 33%;
-
+ width: 50%;
 }
 
 
@@ -164,7 +165,7 @@ input[type="tel"]:focus {
   }
 .contact_info {
     flex-direction:  row;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   .contact_info > label {
@@ -177,7 +178,9 @@ input[type="tel"]:focus {
   flex-basis: 75%;
 }
 
-
+.contact_info > .zip1 {
+  flex-basis: 35%;
+}
 
 
   }
